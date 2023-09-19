@@ -44,7 +44,34 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 7.68px;
+    letter-spacing: 0.4vw;
+}
+
+.clock-box {
+    position: absolute;
+    width: 24%;
+    height: 8%;
+    left: 74%;
+    top: 2%;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.5%;
+    padding: 0.5%;
+}
+
+.clock-text {
+    color: #FFF;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.1vw;
+    text-transform: uppercase;
 }
 
 .pic1 {
@@ -87,11 +114,16 @@ body {
 
 .button {
     display: flex;
-    padding: 1%;
     justify-content: center;
     align-items: center;
+
     gap: 1%;
+    padding: 1%;
     flex-shrink: 0;
+}
+
+.button:active {
+    background-color: currentColor;
 }
 
 .button-text {
