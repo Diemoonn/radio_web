@@ -1,11 +1,9 @@
 @font-face {
-    font-family: "Playfair Display";
-    src: url("fonts/PlayfairDisplay/PlayfairDisplay.eot");
-    src: url("fonts/PlayfairDisplay/PlayfairDisplay.eot") format("embedded-opentype"),
-         url("fonts/PlayfairDisplay/PlayfairDisplay.woff2") format("woff2"),
-         url("fonts/PlayfairDisplay/PlayfairDisplay.woff") format("woff"),
-         url("fonts/PlayfairDisplay/PlayfairDisplay.ttf") format("truetype");
+    font-family: "Playfair Display Bold";
+    src: url("fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.ttf");
+    src: url("fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.ttf") format("truetype");
 }
+
 
 @font-face {
     font-family: "Montserrat";
@@ -25,7 +23,7 @@ body {
     position: absolute;
     width: 52%;
     height: 10%;
-    left: 8%;
+    left: 6%;
     top: 26%;
 
     display: inline-flex;
@@ -39,10 +37,10 @@ body {
 .header-text {
     color: #FFF;
     text-align: center;
-    font-family: "Playfair Display";
-    font-size: 3.3vw;
+    font-family: "Playfair Display Bold";
+    font-size: 3.2vw;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     line-height: normal;
     letter-spacing: 0.4vw;
 }
@@ -102,7 +100,7 @@ body {
     position: absolute;
     width: 58%;
     height: 34%;
-    left: 5%;
+    left: 3%;
     top: 42%;
 
     display: grid;
