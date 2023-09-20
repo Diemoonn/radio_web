@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "Playfair Display Bold";
+    src: url("fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.ttf");
+    src: url("fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.ttf") format("truetype");
+}
+
+body {
+    background-image: url("images/timetable/background.png");
+    background-size: cover;
+}
+
+.header-box {
+    position: absolute;
+    width: 49%;
+    height: 8%;
+    left: 47%;
+    top: 2%;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.5%;
+    padding: 0.5%;
+}
+
+.header-text {
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Playfair Display Bold";
+    font-size: 3.1vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.5vw;
+}
+
+.back-button {
+    position: absolute;
+    width: 4.5%;
+    height: 8.5%;
+    left: 42%;
+    top: 3%;
+}
+
+.timetable {
+    position: absolute;
+    width: 96%;
+    height: 78%;
+    left: 2%;
+    top: 17%;
+
+    border: 0.2vw solid #B8B8B8;
+}

@@ -37,6 +37,7 @@ body {
 .header-text {
     color: #FFF;
     text-align: center;
+    text-transform: uppercase;
     font-family: "Playfair Display Bold";
     font-size: 3.2vw;
     font-style: normal;

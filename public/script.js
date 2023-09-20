@@ -1,3 +1,7 @@
+function timetable() {
+    location.href = "timetable.html";
+}
+
 function getTime() {
     // get current system date
     let date = new Date();
