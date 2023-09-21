@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "Playfair Display Bold";
+    src: url("fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.ttf");
+    src: url("fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat/Montserrat.eot");
+    src: url("fonts/Montserrat/Montserrat.eot") format("embedded-opentype"),
+         url("fonts/Montserrat/Montserrat.woff2") format("woff2"),
+         url("fonts/Montserrat/Montserrat.woff") format("woff"),
+         url("fonts/Montserrat/Montserrat.ttf") format("truetype");
+}
+
+body {
+    background-image: url("images/hobby/background.png");
+    background-size: cover;
+}
+
+.header-box {
+    position: absolute;
+    width: 32%;
+    height: 9%;
+    left: 65%;
+    top: 1%;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.5%;
+    padding: 0.5%;
+}
+
+.header-text {
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Playfair Display Bold";
+    font-size: 3.1vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.5vw;
+}
+
+.back-button {
+    position: absolute;
+    width: 4.5%;
+    height: 8.5%;
+    left: 60%;
+    top: 2.5%;
+}
+
+.picture {
+    position: absolute;
+    width: 18%;
+    height: 24%;
+    left: 0%;
+
+    border: 0.1vw solid #E5194A;
+}
+
+.text-box {
+    position: absolute;
+    width: 74%;
+    height: 67%;
+    left: 22%;
+    top: 19%;
+}
+
+.parsed-text {
+    color: #FFF;
+    text-align: justify;
+    font-family: "Montserrat";
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2vw;
+    letter-spacing: 0.1vw;
+}
