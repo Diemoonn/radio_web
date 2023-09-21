@@ -6,6 +6,10 @@ function hobby() {
     location.href = "hobby.html";
 }
 
+function about() {
+    location.href = "about.html";
+}
+
 function getTime() {
     // get current system date
     let date = new Date();
