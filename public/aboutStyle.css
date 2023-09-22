@@ -48,18 +48,74 @@ body {
 
 .text-box-1 {
     position: absolute;
-    width: 82%;
+    width: 81%;
     height: 38%;
     left: 0.7%;
     top: 13%;
 }
 
+.text-box-2 {
+    position: absolute;
+    width: 64%;
+    height: 38%;
+    left: 0.7%;
+    top: 49%;
+}
+
+.text-box-3 {
+    position: absolute;
+    width: 61%;
+    height: 12%;
+    left: 1%;
+    top: 87.5%;
+}
+
 .parsed-text {
     color: #FFF;
     font-family: Montserrat;
-    text-align: justify;
     font-size: 1.4vw;
+    line-height: 1.8vw;
+    text-align: justify;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.8vw;
+}
+
+.pic-1 {
+    position: absolute;
+    width: 17%;
+    height: 41%;
+    left: 82.5%;
+    top: 13%;
+}
+
+.pic-2 {
+    position: absolute;
+    width: 17%;
+    height: 24%;
+    left: 65%;
+    top: 51%;
+}
+
+.pic-3 {
+    position: absolute;
+    width: 10%;
+    height: 18%;
+    left: 87%;
+    top: 55.5%;
+}
+
+.pic-4 {
+    position: absolute;
+    width: 12%;
+    height: 18%;
+    left: 68%;
+    top: 78%;
+}
+
+.pic-5 {
+    position: absolute;
+    width: 17%;
+    height: 24%;
+    left: 82.5%;
+    top: 75.5%;
 }
