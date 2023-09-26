@@ -14,6 +14,10 @@ function science() {
     location.href = "science.html";
 }
 
+function job() {
+    location.href = "job.html";
+}
+
 function getTime() {
     // get current system date
     let date = new Date();

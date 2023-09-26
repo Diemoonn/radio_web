@@ -30,6 +30,25 @@ app.post('/parseDocx', (req, res) => {
     });
 });
 
+// Images parser
+const fs = require('fs');
+
+app.post('/parseImage', (req, res) => {
+  const imagePath = req.body.imageFolder;
+
+  fs.readdir(imagePath, (err, filenames) => {
+    if (err) {
+      console.error('Error reading image filenames:', err);
+      res.status(500).send('Error reading image filenames');
+    } else {
+      const imageFilenames = filenames.filter((filename) =>
+        ['.jpg', '.jpeg', '.png', '.gif'].includes(path.extname(filename).toLowerCase())
+      );
+      res.json(imageFilenames);
+    }
+  });
+});
+
 /* Server initialization */
 
 const port = 3000; // Change this to the desired port number.
