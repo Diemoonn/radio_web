@@ -81,7 +81,7 @@ body {
 
 .text-box-3 {
     position: absolute;
-    width: 77%;
+    width: 58%;
     height: 19%;
     left: 20%;
     top: 72%;
@@ -115,4 +115,12 @@ body {
     top: 75.5%;
 
     border: 0.1vw solid #154478;
+}
+
+.qr {
+    position: absolute;
+    width: 17%;
+    height: 24%;
+    left: 81%;
+    top: 75%;
 }
