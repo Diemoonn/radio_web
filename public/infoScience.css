@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "Playfair Display Bold";
+    src: url("fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.ttf");
+    src: url("fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Playfair Display Regular";
+    src: url("fonts/PlayfairDisplay\ Regular/PlayfairDisplay.ttf");
+    src: url("fonts/PlayfairDisplay\ Regular/PlayfairDisplay.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat/Montserrat.eot");
+    src: url("fonts/Montserrat/Montserrat.eot") format("embedded-opentype"),
+         url("fonts/Montserrat/Montserrat.woff2") format("woff2"),
+         url("fonts/Montserrat/Montserrat.woff") format("woff"),
+         url("fonts/Montserrat/Montserrat.ttf") format("truetype");
+}
+
+body {
+    background-image: url("images/science/background.png");
+    background-size: cover;
+}
+
+.header-box {
+    position: absolute;
+    width: 37%;
+    height: 10%;
+    left: 59%;
+    top: 1%;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.5%;
+    padding: 0.5%;
+}
+
+.header-text {
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Playfair Display Bold";
+    font-size: 3.2vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.4vw;
+}
+
+.back-button {
+    position: absolute;
+    width: 4%;
+    height: 8%;
+    left: 54%;
+    top: 3.3%;
+}
+
+.textbox-title-box {
+    position: absolute;
+    width: 65%;
+    height: 6%;
+    left: 17%;
+    top: 14%;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.5%;
+    padding: 0.5%;
+}
+
+.textbox-title-text {
+    color: #FFF;
+    text-align: center;
+    font-family: "Playfair Display Regular";
+    font-size: 2.1vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.1vw;
+}
+
+.textbox {
+    position: absolute;
+    width: 89%;
+    height: 71%;
+    left: 5%;
+    top: 21%;
+}
+
+.parsed-text {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.9vw;
+    line-height: 2.1vw;
+    text-align: justify;
+    font-style: normal;
+    font-weight: 400;
+}
