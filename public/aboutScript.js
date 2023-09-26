@@ -41,4 +41,4 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     parseDocx(args2, contentContainer3);
-  });
+});

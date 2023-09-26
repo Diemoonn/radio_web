@@ -10,6 +10,10 @@ function about() {
     location.href = "about.html";
 }
 
+function science() {
+    location.href = "science.html";
+}
+
 function getTime() {
     // get current system date
     let date = new Date();
