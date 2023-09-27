@@ -54,6 +54,25 @@ const args = {
 // Call the function to fetch image filenames when the page loads
 window.onload = fetchImageFilenames(args);
 
-function headerLayout() {
-    
+// function that controls header layout
+let onScreen = false;
+
+function setupLayout() {
+  onScreen = !onScreen;
+
+  const triggerBox = document.getElementById("topTrigger");
+
+  if (onScreen) {
+    triggerBox.innerHTML = `
+    <div class="header">
+      <img class="back-button" src="images/job/back button.png" alt="back button" onclick="back()">
+    </div>
+    `;
+  } else {
+    triggerBox.innerHTML = "";
+  }
+}
+
+function back() {
+  location.href = "index.html";
 }
