@@ -18,6 +18,10 @@ function job() {
     location.href = "job.html";
 }
 
+function teachers() {
+    location.href = "teachers.html";
+}
+
 function getTime() {
     // get current system date
     let date = new Date();
