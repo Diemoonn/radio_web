@@ -1,3 +1,84 @@
+@font-face {
+    font-family: "Playfair Display Bold";
+    src: url("fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.ttf");
+    src: url("fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat/Montserrat.eot");
+    src: url("fonts/Montserrat/Montserrat.eot") format("embedded-opentype"),
+         url("fonts/Montserrat/Montserrat.woff2") format("woff2"),
+         url("fonts/Montserrat/Montserrat.woff") format("woff"),
+         url("fonts/Montserrat/Montserrat.ttf") format("truetype");
+}
+
 body {
-    background-color: gray;
+    background-image: url("images/infoTeachers/background.png");
+    background-size: cover;
+}
+
+.header-box {
+    position: absolute;
+    width: 36%;
+    height: 10%;
+    left: 60%;
+    top: 2%;
+}
+
+.header-text {
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Playfair Display Bold";
+    font-size: 3.2vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.4vw;
+}
+
+.back-button {
+    position: absolute;
+    width: 4%;
+    height: 8%;
+    left: 55%;
+    top: 2.1%;
+}
+
+.profile-pic {
+    position: absolute;
+    width: 27%;
+    height: 71%;
+    left: 6%;
+    top: 20%;
+
+    border: 0.1vw solid #E5194A;
+}
+
+.name-container {
+    position: absolute;
+    left: 40.8%;
+    top: 21%;
+
+    color: #FFF;
+    font-family: "Playfair Display Bold";
+    font-size: 2.1vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.2vw;
+}
+
+.info-container {
+    position: absolute;
+    left: 40.8%;
+    top: 28%;
+
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.4vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
