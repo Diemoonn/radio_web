@@ -41,7 +41,8 @@ body {
 .back-button {
     position: absolute;
     width: 4.5%;
-    height: 8.5%;
+    height: auto;
+    /*height: 8.5%;*/
     left: 65%;
     top: 2.2%;
 }
@@ -83,7 +84,8 @@ body {
 .pic-1 {
     position: absolute;
     width: 17%;
-    height: 41%;
+    height: auto;
+    /*height: 41%;*/
     left: 82.5%;
     top: 13%;
 }
@@ -91,7 +93,8 @@ body {
 .pic-2 {
     position: absolute;
     width: 17%;
-    height: 24%;
+    height: auto;
+    /*height: 24%;*/
     left: 65%;
     top: 51%;
 }
@@ -99,7 +102,8 @@ body {
 .pic-3 {
     position: absolute;
     width: 10%;
-    height: 18%;
+    height: auto;
+    /*height: 18%;*/
     left: 87%;
     top: 55.5%;
 }
@@ -107,7 +111,8 @@ body {
 .pic-4 {
     position: absolute;
     width: 12%;
-    height: 18%;
+    height: auto;
+    /*height: 18%;*/
     left: 68%;
     top: 78%;
 }
@@ -115,7 +120,8 @@ body {
 .pic-5 {
     position: absolute;
     width: 17%;
-    height: 24%;
+    height: auto;
+    /*height: 24%;*/
     left: 82.5%;
     top: 75.5%;
 }

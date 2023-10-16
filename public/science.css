@@ -48,7 +48,7 @@ body {
 .back-button {
     position: absolute;
     width: 4%;
-    height: 8%;
+    height: auto;
     left: 54%;
     top: 3.3%;
 }
@@ -90,7 +90,8 @@ body {
 .pic-1 {
     position: absolute;
     width: 19%;
-    height: 24%;
+    height: auto;
+    /*height: 24%;*/
     left: 0%;
     top: 22%;
 
@@ -100,7 +101,8 @@ body {
 .pic-2 {
     position: absolute;
     width: 19%;
-    height: 26%;
+    height: auto;
+    /*height: 26%;*/
     left: 80%;
     top: 47%;
 
@@ -110,7 +112,8 @@ body {
 .pic-3 {
     position: absolute;
     width: 19%;
-    height: 24%;
+    height: auto;
+    /*height: 24%;*/
     left: 0%;
     top: 75.5%;
 
@@ -120,7 +123,8 @@ body {
 .qr {
     position: absolute;
     width: 17%;
-    height: 24%;
+    height: auto;
+    /*height: 24%;*/
     left: 81%;
     top: 75%;
 }

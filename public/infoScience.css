@@ -54,7 +54,8 @@ body {
 .back-button {
     position: absolute;
     width: 4%;
-    height: 8%;
+    height: auto;
+    /*height: 8%;*/
     left: 54%;
     top: 3.3%;
 }
