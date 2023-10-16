@@ -70,7 +70,8 @@ body {
 .profile-pic {
     position: relative;
     width: 80%;
-    height: 82%;
+    height: auto;
+    /*height: 82%;*/
 }
 
 .name {
