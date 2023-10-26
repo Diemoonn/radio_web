@@ -52,26 +52,25 @@ app.post('/parseImage', (req, res) => {
 // Images uploader
 
 const fileUpload = require('express-fileupload');
-app.use(fileUpload());
+app.use(fileUpload({
+  limits: {
+    fileSize: 10000000, // Around 10MB
+  },
+  abortOnLimit: true,
+}));
 
 app.post('/uploadImage', (req, res) => {
-  if (!req.files || !req.files.image) {
-      return res.status(400).send('No file was uploaded.');
-  }
+  // Get the file that was set to our field named "image"
+  const { image } = req.files;
 
-  const image = req.files.image;
+  // If no image submitted, exit
+  if (!image) return res.sendStatus(400);
 
-  // Define the directory where uploaded images will be stored
-  const uploadDir = path.join(__dirname, 'uploads');
+  // Move the uploaded image to our upload folder
+  image.mv(__dirname + '/public/images/job/promo/' + image.name);
 
-  // Save the uploaded file
-  image.mv(path.join(uploadDir, image.name), (err) => {
-      if (err) {
-          return res.status(500).send('Error uploading the image.');
-      }
-
-      res.send('Image uploaded successfully.');
-  });
+  // Do nothing if success
+  res.sendStatus(304);
 });
 
 /* Server initialization */

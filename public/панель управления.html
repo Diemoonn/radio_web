@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Панель управления</title>
+        <link href="панель управления.css" rel="stylesheet">
+        <script src="панель управления.js"></script>
+    </head>
+    <body>
+        <div class="header-box">
+            <div class="header-text">Панель управления</div>
+        </div>
+        <div class="settings-box">
+            <div class="upload-form" style="height: 8%; top: 0%;" action="/uploadImage" method="post" enctype="multipart/form-data">
+                <div class="settings-label">Загрузить изображение в раздел "Трудоустройство"</div>
+                <form action="/uploadImage" method="POST" enctype="multipart/form-data" class="upload-image">
+                    <input type="file" name="image" />
+                    <button type="submit">Загрузить</button>
+                </form>
+            </div>
+            <div class="upload-form" style="height: 13%; top: 12%;">
+                <div class="settings-label">Обновить данные кэша</div>
+                <img src="images/controlPanel/refresh.png" alt="refresh-button" class="refresh-button">
+            </div>
+        </div>
+    </body>
+</html>
