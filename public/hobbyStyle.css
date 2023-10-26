@@ -1,7 +1,8 @@
 @font-face {
     font-family: "Playfair Display Bold";
     src: url("fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.ttf");
-    src: url("fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.ttf") format("truetype");
+    src: url("fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.ttf") format("truetype"),
+         url("fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.woff2") format("woff2");
 }
 
 @font-face {

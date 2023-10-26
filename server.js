@@ -49,6 +49,31 @@ app.post('/parseImage', (req, res) => {
   });
 });
 
+// Images uploader
+
+const fileUpload = require('express-fileupload');
+app.use(fileUpload());
+
+app.post('/uploadImage', (req, res) => {
+  if (!req.files || !req.files.image) {
+      return res.status(400).send('No file was uploaded.');
+  }
+
+  const image = req.files.image;
+
+  // Define the directory where uploaded images will be stored
+  const uploadDir = path.join(__dirname, 'uploads');
+
+  // Save the uploaded file
+  image.mv(path.join(uploadDir, image.name), (err) => {
+      if (err) {
+          return res.status(500).send('Error uploading the image.');
+      }
+
+      res.send('Image uploaded successfully.');
+  });
+});
+
 /* Server initialization */
 
 const port = 3000; // Change this to the desired port number.
