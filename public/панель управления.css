@@ -47,22 +47,20 @@ body {
 }
 
 .upload-form {
-    position: absolute;
-    width: 100%;
-    left: 0%;
-
+    height: fit-content;
+    
+    padding: 1%;
+    margin-bottom: 2%;
     border-radius: 1vw;
 
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
+    display: flex;
+    align-items: center;
 
     background-color: gray;
 }
 
 .settings-label {
-    position: absolute;
-    left: 2%;
+    width: fit-content;
 
     font-family: "Montserrat";
     font-size: 1.5vw;
@@ -73,28 +71,25 @@ body {
 }
 
 .upload-image {
-    position: absolute;
-    left: 74%;
-    top: 25%;
+    width: fit-content;
+    margin-left: 25%;
 }
 
-.refresh-button {
-    position: absolute;
-    width: 3%;
+.clickable-button {
+    width: 2%;
     height: auto;
-    left: 85%;
 
     padding: 1%;
+    margin-left: 63%;
 
     border-radius: 0.5vw;
     background-color: rgb(190, 190, 190);
-    
 }
 
-.refresh-button:hover {
-    background-color: rgb(164, 164, 164);
+.clickable-button:hover {
+    background-color: rgb(173, 173, 173);
 }
 
-.refresh-button:active {
+.clickable-button:active {
     background-color: rgb(155, 155, 155);
 }
