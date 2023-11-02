@@ -62,8 +62,6 @@ function getTime() {
     // compute final time statement
     let time = week + " <br> " + hh + ":" + mm + ", " + day + " " + monthName + " " + year;
 
-    console.log(time);
-
     // assign time statement to the clock
     let watch = document.getElementById("clockText");
     if (watch) {

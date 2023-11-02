@@ -5,11 +5,10 @@ const sheetName = 'user-data';
 const query = encodeURIComponent('Select *');
 const url = `${base}&sheet=${sheetName}&tq=${query}`;
 
+const tablePath = 'public/data/infoTeachers/teachersTimetable.json';
+
 // data container to store general table data
 const data = [];
-
-// execute our function when the page if fully loaded
-document.addEventListener('DOMContentLoaded', init);
 
 // fetch personal days for a current teacher
 function processTable(table) {
@@ -30,44 +29,31 @@ function processTable(table) {
         }
 
         rowCount += 1;
+
+        console.log('at step ', rowCount, ' personalTimetable is ', personalTimetable);
     });
 
     document.getElementById('infoContainer').innerText += personalTimetable;
 }
 
-// fetch all the data from the spreadsheet into a DATA array
 function init() {
-    fetch(url)
-        .then(res => res.text())
-        .then(rep => {
-            // Remove additional text and extract only JSON:
-            const jsonData = JSON.parse(rep.substring(47).slice(0, -2));
-            console.log('rep: ' + rep);
-
-            // count table's columns
-            let columnNum = 0;
-            jsonData.table.cols.forEach((heading) => {
-                columnNum += 1;
-            })
-
-            //extract row data
-            jsonData.table.rows.forEach((rowData) => {
-
-                // initializing an empty row object and then construct a row object structure
-                const row = {};
-                
-                // read all the current row data into a ROW array
-                for (let objectIndex = 0; objectIndex < 16; objectIndex += 1) {
-                    row[objectIndex] = (rowData.c[objectIndex] != null) ? rowData.c[objectIndex].v : '';
-                }
-
-                // add refined row to the general table
-                data.push(row);
-            })
-
-            // ... and here we have our table fully parsed!
-            console.log(data);
-
-            processTable(data);
-        })
+    pathObj = {
+        URL: tablePath
+    }
+    
+    fetch('/getSpreadsheet', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(pathObj)
+    })
+    .then((response) => response.json())
+    .then((data) => {
+        processTable(data);
+    });
 }
+
+window.addEventListener("DOMContentLoaded", () => {
+    setTimeout(init, 50);
+});
