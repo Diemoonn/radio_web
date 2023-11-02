@@ -55,5 +55,5 @@ function init() {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-    setTimeout(init, 50);
+    setTimeout(init, 100);
 });
