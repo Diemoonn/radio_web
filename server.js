@@ -142,6 +142,41 @@ app.post('/getSpreadsheet', (req, res) => {
   });  
 });
 
+// Timetable-as-HTML parser
+
+const bodyParser = require('body-parser');
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+app.post('/getTimetableHTML', (req, res) => {
+  const pathToSave = req.body.path;
+  const fileName = req.body.fileName;
+
+  const spreadsheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSqYYs7Omel92ovp4T5ZBfqUSj34jC5bML14EbqSfnpysflNNcjkAVT-d2ni9M-UbwZa2aJNDljoWM-/pubhtml?gid=1702287618&chrome=false&amp;'
+
+  // Construct the URL for exporting the data as HTML using Google Visualization API.
+  const htmlExportUrl = spreadsheetUrl + '?output=html';
+
+  fetch(htmlExportUrl)
+      .then(response => response.text())
+      .then(htmlContent => {
+        // Save the HTML content to the specified file path.
+        const filePath = `${pathToSave}/${fileName}`;
+        fs.writeFileSync(filePath, htmlContent);
+
+        console.log('HTML file saved as', filePath);
+
+        // Send a success response.
+        res.status(200);//.send('HTML file saved successfully');
+      })
+      .catch(error => {
+        console.error('Error fetching spreadsheet data:', error);
+        // Handle the error by sending an error response or logging it.
+        res.status(500).send('Error fetching spreadsheet data');
+      });
+});
+
 /* Server initialization */
 
 const port = 3000; // Change this to the desired port number.
