@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "Playfair Display Bold";
+    src: url("fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.ttf");
+    src: url("fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat/Montserrat.eot");
+    src: url("fonts/Montserrat/Montserrat.eot") format("embedded-opentype"),
+         url("fonts/Montserrat/Montserrat.woff2") format("woff2"),
+         url("fonts/Montserrat/Montserrat.woff") format("woff"),
+         url("fonts/Montserrat/Montserrat.ttf") format("truetype");
+}
+
+body {
+    background-image: url("images/science/background.png");
+    background-size: cover;
+}
+
+.header-box {
+    position: absolute;
+    width: 37%;
+    height: 10%;
+    left: 59%;
+    top: 1%;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.5%;
+    padding: 0.5%;
+}
+
+.header-text {
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Playfair Display Bold";
+    font-size: 3.2vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.4vw;
+}
+
+.back-button {
+    position: absolute;
+    width: 4%;
+    height: auto;
+    left: 54%;
+    top: 3.3%;
+}
+
+.parsed-text {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.9vw;
+    line-height: 2.1vw;
+    text-align: justify;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.text-box-1 {
+    position: absolute;
+    width: 78%;
+    height: 30%;
+    left: 21%;
+    top: 17%;
+}
+
+.text-box-2 {
+    position: absolute;
+    width: 78%;
+    height: 27%;
+    left: 1%;
+    top: 45%;
+}
+
+.text-box-3 {
+    position: absolute;
+    width: 58%;
+    height: 19%;
+    left: 20%;
+    top: 72%;
+}
+
+.pic-1 {
+    position: absolute;
+    width: 19%;
+    height: auto;
+    /*height: 24%;*/
+    left: 0%;
+    top: 22%;
+
+    border: 0.1vw solid #154478;
+}
+
+.pic-2 {
+    position: absolute;
+    width: 19%;
+    height: auto;
+    /*height: 26%;*/
+    left: 80%;
+    top: 47%;
+
+    border: 0.1vw solid #E5194A;
+}
+
+.pic-3 {
+    position: absolute;
+    width: 19%;
+    height: auto;
+    /*height: 24%;*/
+    left: 0%;
+    top: 75.5%;
+
+    border: 0.1vw solid #154478;
+}
+
+.qr {
+    position: absolute;
+    width: 17%;
+    height: auto;
+    /*height: 24%;*/
+    left: 81%;
+    top: 75%;
+}

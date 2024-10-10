@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "Playfair Display Bold";
+    src: url("fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.ttf");
+    src: url("fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat/Montserrat.eot");
+    src: url("fonts/Montserrat/Montserrat.eot") format("embedded-opentype"),
+         url("fonts/Montserrat/Montserrat.woff2") format("woff2"),
+         url("fonts/Montserrat/Montserrat.woff") format("woff"),
+         url("fonts/Montserrat/Montserrat.ttf") format("truetype");
+}
+
+body {
+    background-image: url("images/index/background.png");
+    background-size: cover;
+}
+
+.header-box {
+    position: absolute;
+    width: 52%;
+    height: 10%;
+    left: 6%;
+    top: 26%;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.5%;
+    padding: 0.5%;
+}
+
+.header-text {
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Playfair Display Bold";
+    font-size: 3.2vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.4vw;
+}
+
+.clock-box {
+    position: absolute;
+    width: 24%;
+    height: 8%;
+    left: 74%;
+    top: 2%;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.5%;
+    padding: 0.5%;
+}
+
+.clock-text {
+    color: #FFF;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.1vw;
+    text-transform: uppercase;
+}
+
+.pic1 {
+    position: absolute;
+    width: 17%;
+    height: 80%;
+    left: 64%;
+    top: 15%;
+
+    flex-shrink: 0;
+
+    border: 0.1vw solid #18375A;
+}
+
+.pic2 {
+    position: absolute;
+    width: 17%;
+    height: 80%;
+    left: 82%;
+    top: 15%;
+
+    flex-shrink: 0;
+
+    border: 0.1vw solid #A31A3B;;
+}
+
+.camera-pic {
+    position: absolute;
+    width: 6%;
+    height: auto;
+    bottom: 1%;
+    left: 2%;
+}
+
+.button-box {
+    position: absolute;
+    width: 58%;
+    height: 34%;
+    left: 3%;
+    top: 42%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 6%;
+    row-gap: 25%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1%;
+    padding: 1%;
+    flex-shrink: 0;
+}
+
+.button:active {
+    background-color: currentColor;
+}
+
+.button-text {
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}

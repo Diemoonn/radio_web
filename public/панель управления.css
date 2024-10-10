@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "Playfair Display Bold";
+    src: url("fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.ttf");
+    src: url("fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat/Montserrat.eot");
+    src: url("fonts/Montserrat/Montserrat.eot") format("embedded-opentype"),
+         url("fonts/Montserrat/Montserrat.woff2") format("woff2"),
+         url("fonts/Montserrat/Montserrat.woff") format("woff"),
+         url("fonts/Montserrat/Montserrat.ttf") format("truetype");
+}
+
+body {
+    background-image: url("images/controlPanel/background.png");
+    background-size: cover;
+}
+
+.header-box {
+    position: absolute;
+    width: 45%;
+    height: 7%;
+    left: 53%;
+    top: 2.5%;
+}
+
+.header-text {
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Playfair Display Bold";
+    font-size: 3.1vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.5vw;
+}
+
+.settings-box {
+    position: absolute;
+    width: 95%;
+    height: 80%;
+    left: 2.5%;
+    top: 16%;
+}
+
+.upload-form {
+    height: fit-content;
+    
+    padding: 1%;
+    margin-bottom: 2%;
+    border-radius: 1vw;
+
+    display: flex;
+    align-items: center;
+
+    background-color: gray;
+}
+
+.settings-label {
+    width: fit-content;
+
+    font-family: "Montserrat";
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.1vw;
+}
+
+.upload-image {
+    width: fit-content;
+    margin-left: 25%;
+}
+
+.clickable-button {
+    width: 2%;
+    height: auto;
+
+    padding: 1%;
+    margin-left: 63%;
+
+    border-radius: 0.5vw;
+    background-color: rgb(190, 190, 190);
+}
+
+.clickable-button:hover {
+    background-color: rgb(173, 173, 173);
+}
+
+.clickable-button:active {
+    background-color: rgb(155, 155, 155);
+}

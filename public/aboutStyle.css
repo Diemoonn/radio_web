@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "Playfair Display Bold";
+    src: url("fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.ttf");
+    src: url("fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat/Montserrat.eot");
+    src: url("fonts/Montserrat/Montserrat.eot") format("embedded-opentype"),
+         url("fonts/Montserrat/Montserrat.woff2") format("woff2"),
+         url("fonts/Montserrat/Montserrat.woff") format("woff"),
+         url("fonts/Montserrat/Montserrat.ttf") format("truetype");
+}
+
+body {
+    background-image: url("images/about/background.png");
+    background-size: cover;
+}
+
+.header-box {
+    position: absolute;
+    width: 24%;
+    height: 9%;
+    left: 70%;
+    top: 2.5%;
+}
+
+.header-text {
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Playfair Display Bold";
+    font-size: 3.1vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.5vw;
+}
+
+.back-button {
+    position: absolute;
+    width: 4.5%;
+    height: auto;
+    left: 65%;
+    top: 2%;
+}
+
+.text-box-1 {
+    position: absolute;
+    width: 81%;
+    height: 38%;
+    left: 0.7%;
+    top: 13%;
+}
+
+.text-box-2 {
+    position: absolute;
+    width: 64%;
+    height: 38%;
+    left: 0.7%;
+    top: 49%;
+}
+
+.text-box-3 {
+    position: absolute;
+    width: 61%;
+    height: 12%;
+    left: 1%;
+    top: 87.5%;
+}
+
+.parsed-text {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.4vw;
+    line-height: 1.8vw;
+    text-align: justify;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.pic-1 {
+    position: absolute;
+    width: 17%;
+    height: auto;
+    /*height: 41%;*/
+    left: 82.5%;
+    top: 13%;
+}
+
+.pic-2 {
+    position: absolute;
+    width: 17%;
+    height: auto;
+    /*height: 24%;*/
+    left: 65%;
+    top: 51%;
+}
+
+.pic-3 {
+    position: absolute;
+    width: 10%;
+    height: auto;
+    /*height: 18%;*/
+    left: 87%;
+    top: 55.5%;
+}
+
+.pic-4 {
+    position: absolute;
+    width: 12%;
+    height: auto;
+    /*height: 18%;*/
+    left: 68%;
+    top: 78%;
+}
+
+.pic-5 {
+    position: absolute;
+    width: 17%;
+    height: auto;
+    /*height: 24%;*/
+    left: 82.5%;
+    top: 75.5%;
+}
